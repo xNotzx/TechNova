@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cuenta TechNova</title>
+        <link rel="stylesheet" href="cuentas.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-laptop"></i>
+                    TechNova
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">
+                            <i class="fas fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Productos.html">
+                            <i class="fas fa-computer"></i>
+                            Productos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-overlay">
+                <h1>Cuenta TechNova</h1>
+                <p>Administra tu cuenta, inicia sesión, regístrate y personaliza tu perfil.</p>
+            </div>
+        </section>
+
+        <section class="cuenta-page">
+            <div class="cuenta-info">
+                <h2>Bienvenido a TechNova</h2>
+                <p>
+                    Crea una cuenta, mantener tu sesión iniciada y personalizar tu experiencia dentro de la plataforma.
+                </p>
+                <div id="sessionStatus" class="session-status">No has iniciado sesión.</div>
+                <div id="profilePanel" class="profile-panel" hidden>
+                    <img id="profilePreview" class="profile-preview" src="img/user.png" alt="Foto de perfil" />
+
+                    <div class="profile-details">
+                        <strong id="profileName"> Usuario </strong>
+                        <span id="profileEmail"> correo@ejemplo.com </span>
+
+                        <label class="profile-upload" for="profileImageInput"> Subir foto de perfil </label>
+                        <input id="profileImageInput" type="file" accept="image/*" />
+
+                        <button id="logoutBtn" class="btn-logout" type="button">Cerrar sesión</button>
+                    </div>
+                </div>
+
+                <div class="storage-panel">
+                    <div>
+                        <strong> Usuarios almacenados: </strong>
+
+                        <span id="userCount"> 0 usuarios guardados </span>
+                    </div>
+
+                    <button id="downloadUsers" class="btn-storage" type="button">Guardar usuarios.json</button>
+                </div>
+            </div>
+
+            <div class="formularios" id="authForms">
+                <form id="loginForm" class="auth-card">
+                    <h3>Iniciar Sesión</h3>
+
+                    <label for="loginEmail"> Correo electrónico </label>
+
+                    <input id="loginEmail" type="email" required />
+
+                    <label for="loginPassword"> Contraseña </label>
+
+                    <input id="loginPassword" type="password" required />
+
+                    <button type="submit" class="btn-form">Entrar</button>
+
+                    <p id="loginMessage" class="form-message"></p>
+                </form>
+
+                <form id="registerForm" class="auth-card">
+                    <h3>Crear Cuenta</h3>
+
+                    <label for="registerName"> Nombre completo </label>
+
+                    <input id="registerName" type="text" required />
+
+                    <label for="registerEmail"> Correo electrónico </label>
+
+                    <input id="registerEmail" type="email" required />
+
+                    <label for="registerPassword"> Contraseña </label>
+
+                    <input id="registerPassword" type="password" minlength="6" required />
+
+                    <button type="submit" class="btn-form">Crear Cuenta</button>
+
+                    <p id="registerMessage" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <h2>TechNova Computers</h2>
+
+                <p>Tecnología de última generación para todos.</p>
+
+                <div class="socials">
+                    <a href="paginas.html" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <a href="paginas.html" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="paginas.html" class="social-link">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                    <a href="paginas.html" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/cuenta.js"></script>
+    </body>
+</html>
