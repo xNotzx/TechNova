@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo de PCs Gamer</title>
+
+<link rel="stylesheet" href="css/styles_p.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="site-nav">
+        <div class="logo"><i class="fas fa-laptop" aria-hidden="true"></i>TechNova</div>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio"><i class="fas fa-house"></i> Inicio</a></li>
+            <li><a href="cuentas.html"> <i class="fa-solid fa-user"></i> Cuenta</a></li>
+            <li><a href="index.html#ayuda"> <i class="fa-duotone fa-solid fa-question"></i> Ayuda </a></li>
+        </ul>
+        <div class="header-user-area">
+            <a class="cart-btn" href="#" aria-label="Ver canasta">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<button class="btn-regresar" onclick="regresarInicio()">
+    Inicio
+</button>
+    
+<header class="hero">
+
+    <div class="hero-overlay">
+        <h1>Catálogo de PCs Gamer</h1>
+
+        <p>
+            Equipos de alto rendimiento para gaming, streaming,
+            edición profesional y creación de contenido.
+        </p>
+
+    </div>
+
+</header>
+
+<!-- PC TITAN X -->
+<div class="pc-card">
+
+    <div class="pc-header">
+        <h2>PC TITAN X</h2>
+
+        <button class="btn-componentes" onclick="mostrarComponentes('pc1')">
+            Ver Componentes
+        </button>
+    </div>
+
+    <div id="pc1" class="componentes">
+
+        <!-- CPU TITAN X -->
+<div class="componente">
+    <span>Procesador: Intel Core i9-14900K</span>
+    <button class="btn-ver-mas" onclick="mostrarLinks('cpu1', this)">Ver Más</button>
+
+    <div id="cpu1" class="links-componente">
+        <a data-busqueda="Intel Core i9-14900K"
+           href="#"
+           target="_blank"
+           class="btn-amazon">Amazon</a>
+
+        <a data-busqueda="Intel Core i9-14900K"
+           href="#"
+           target="_blank"
+           class="btn-ml">Mercado Libre</a>
+    </div>
+</div>
+
+<!-- GPU TITAN X -->
+<div class="componente">
+    <span>Tarjeta Gráfica: NVIDIA RTX 5090</span>
+    <button class="btn-ver-mas" onclick="mostrarLinks('gpu1', this)">Ver Más</button>
+
+    <div id="gpu1" class="links-componente">
+        <a data-busqueda="RTX 5090"
+           href="#"
+           target="_blank"
+           class="btn-amazon">Amazon</a>
+
+        <a data-busqueda="RTX 5090"
+           href="#"
+           target="_blank"
+           class="btn-ml">Mercado Libre</a>
+    </div>
+</div>
+
+<!-- RAM TITAN X -->
+<div class="componente">
+    <span>Memoria RAM: 64GB DDR5 RGB</span>
+    <button class="btn-ver-mas" onclick="mostrarLinks('ram1', this)">Ver Más</button>
+
+    <div id="ram1" class="links-componente">
+        <a data-busqueda="64GB DDR5 RGB"
+           href="#"
+           target="_blank"
+           class="btn-amazon">Amazon</a>
+
+        <a data-busqueda="64GB DDR5 RGB"
+           href="#"
+           target="_blank"
+           class="btn-ml">Mercado Libre</a>
+    </div>
+</div>
+
+<!-- SSD TITAN X -->
+<div class="componente">
+    <span>SSD: 4TB NVMe Gen 5</span>
+    <button class="btn-ver-mas" onclick="mostrarLinks('ssd1', this)">Ver Más</button>
+
+    <div id="ssd1" class="links-componente">
+        <a data-busqueda="4TB NVMe Gen 5"
+           href="#"
+           target="_blank"
+           class="btn-amazon">Amazon</a>
+
+        <a data-busqueda="4TB NVMe Gen 5"
+           href="#"
+           target="_blank"
+           class="btn-ml">Mercado Libre</a>
+    </div>
+</div>
+
+<!-- PSU TITAN X -->
+<div class="componente">
+    <span>Fuente: 1200W 80+ Platinum</span>
+    <button class="btn-ver-mas" onclick="mostrarLinks('psu1', this)">Ver Más</button>
+
+    <div id="psu1" class="links-componente">
+        <a data-busqueda="1200W 80+ Platinum"
+           href="#"
+           target="_blank"
+           class="btn-amazon">Amazon</a>
+
+        <a data-busqueda="1200W 80+ Platinum"
+           href="#"
+           target="_blank"
+           class="btn-ml">Mercado Libre</a>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<!-- PC PHANTOM PRO -->
+<div class="pc-card">
+
+    <div class="pc-header">
+        <h2>PC PHANTOM PRO</h2>
+
+        <button class="btn-componentes" onclick="mostrarComponentes('pc2')">
+            Ver Componentes
+        </button>
+    </div>
+
+    <div id="pc2" class="componentes">
+
+    <div class="componente">
+        <span>Procesador: AMD Ryzen 9 9950X</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('cpu2', this)">Ver Más</button>
+
+        <div id="cpu2" class="links-componente">
+            <a data-busqueda="AMD Ryzen 9 9950X" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="AMD Ryzen 9 9950X" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Tarjeta Gráfica: NVIDIA RTX 5080</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('gpu2', this)">Ver Más</button>
+
+        <div id="gpu2" class="links-componente">
+            <a data-busqueda="RTX 5080" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="RTX 5080" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Memoria RAM: 32GB DDR5</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ram2', this)">Ver Más</button>
+
+        <div id="ram2" class="links-componente">
+            <a data-busqueda="32GB DDR5" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="32GB DDR5" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>SSD: 2TB NVMe</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ssd2', this)">Ver Más</button>
+
+        <div id="ssd2" class="links-componente">
+            <a data-busqueda="SSD 2TB NVMe" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="SSD 2TB NVMe" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Fuente: 1000W 80+ Gold</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('psu2', this)">Ver Más</button>
+
+        <div id="psu2" class="links-componente">
+            <a data-busqueda="1000W 80+ Gold" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="1000W 80+ Gold" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- PC STORM ELITE -->
+<div class="pc-card">
+
+    <div class="pc-header">
+        <h2>PC STORM ELITE</h2>
+
+        <button class="btn-componentes" onclick="mostrarComponentes('pc3')">
+            Ver Componentes
+        </button>
+    </div>
+
+    <div id="pc3" class="componentes">
+
+    <div class="componente">
+        <span>Procesador: Intel Core i7-14700K</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('cpu3', this)">Ver Más</button>
+
+        <div id="cpu3" class="links-componente">
+            <a data-busqueda="Intel Core i7-14700K" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="Intel Core i7-14700K" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Tarjeta Gráfica: RTX 5070 Ti</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('gpu3', this)">Ver Más</button>
+
+        <div id="gpu3" class="links-componente">
+            <a data-busqueda="RTX 5070 Ti" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="RTX 5070 Ti" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Memoria RAM: 32GB DDR5</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ram3', this)">Ver Más</button>
+
+        <div id="ram3" class="links-componente">
+            <a data-busqueda="32GB DDR5" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="32GB DDR5" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>SSD: 2TB NVMe</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ssd3', this)">Ver Más</button>
+
+        <div id="ssd3" class="links-componente">
+            <a data-busqueda="SSD 2TB NVMe" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="SSD 2TB NVMe" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Refrigeración: Líquida 360mm</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('cooler3', this)">Ver Más</button>
+
+        <div id="cooler3" class="links-componente">
+            <a data-busqueda="Refrigeracion Liquida 360mm" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="Refrigeracion Liquida 360mm" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Fuente de Poder: 1000W 80+ Gold Modular</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('psu3', this)">Ver Más</button>
+
+        <div id="psu3" class="links-componente">
+            <a data-busqueda="1000W 80+ Gold Modular" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="1000W 80+ Gold Modular" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- PC DRAGON FIRE -->
+<div class="pc-card">
+
+    <div class="pc-header">
+
+        <div class="titulo-pc">
+            <h2>PC DRAGON FIRE</h2>
+            <span class="etiqueta-vendida">Más Vendida</span>
+        </div>
+
+        <button class="btn-componentes" onclick="mostrarComponentes('pc4')">
+            Ver Componentes
+        </button>
+
+    </div>
+
+    <div id="pc4" class="componentes">
+
+    <div class="componente">
+        <span>Procesador: Ryzen 7 9800X3D</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('cpu4', this)">Ver Más</button>
+
+        <div id="cpu4" class="links-componente">
+            <a data-busqueda="Ryzen 7 9800X3D" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="Ryzen 7 9800X3D" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Tarjeta Gráfica: RTX 5070</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('gpu4', this)">Ver Más</button>
+
+        <div id="gpu4" class="links-componente">
+            <a data-busqueda="RTX 5070" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="RTX 5070" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>RAM: 32GB DDR5 RGB</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ram4', this)">Ver Más</button>
+
+        <div id="ram4" class="links-componente">
+            <a data-busqueda="32GB DDR5 RGB" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="32GB DDR5 RGB" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>SSD: 1TB NVMe</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('ssd4', this)">Ver Más</button>
+
+        <div id="ssd4" class="links-componente">
+            <a data-busqueda="SSD 1TB NVMe" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="SSD 1TB NVMe" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+    <div class="componente">
+        <span>Fuente de Poder: 850W 80+ Gold Modular</span>
+        <button class="btn-ver-mas" onclick="mostrarLinks('psu4', this)">Ver Más</button>
+
+        <div id="psu4" class="links-componente">
+            <a data-busqueda="850W 80+ Gold Modular" href="#" target="_blank" class="btn-amazon">Amazon</a>
+            <a data-busqueda="850W 80+ Gold Modular" href="#" target="_blank" class="btn-ml">Mercado Libre</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+    
+    
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>TechNova</h2>
+
+            <div class="contenedor-regresar">
+                    
+                    </div>
+            
+            <p>
+                Tecnología de alto rendimiento para gamers,
+                creadores de contenido y profesionales.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Síguenos</h3>
+
+            <div class="social-buttons">
+
+                <a href="paginas.html" class="social-btn facebook">
+                    Facebook
+                </a>
+
+                <a href="paginas.html" class="social-btn instagram">
+                    Instagram
+                </a>
+
+                <a href="paginas.html" class="social-btn x">
+                    X
+                </a>
+
+                <a href="paginas.html" class="social-btn youtube">
+                    YouTube
+                </a>
+
+                <a href="paginas.html" class="social-btn tiktok">
+                    TikTok
+                </a>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        
+        <p>
+            © 2026 TechNova. Todos los derechos reservados.
+        </p>
+
+    </div>
+        
+
+</footer>
+<script src="js/cart.js"></script>
+<script src="js/script_P.js"></script>
+</body>
+</html>

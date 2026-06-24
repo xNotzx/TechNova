@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TechNova Computers</title>
+        
+        <link rel="preload" href="videos/355595_medium.mp4" as="video" type="video/mp4" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/cart.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
+    <body>
+        //Loader
+        <div id="pageLoader" class="page-loader">
+            <div class="loader-content">
+                <h1>TechNova</h1>
+                <span class="loader-spinner" aria-hidden="true"></span>
+            </div>
+        </div>
+
+        <header>
+            <nav>
+                <div class="logo"><i class="fas fa-laptop"></i>TechNova</div>
+                <ul class="nav-links">
+                    <li><a href="#inicio"><i class="fas fa-house"></i> Inicio</a></li>
+                    <li><a href="#productos"><i class="fa-brands fa-product-hunt"></i> Productos</a></li>
+                    <li><a href="#comparativa"><i class="fa-solid fa-table"></i> Comparativa</a></li>
+                    <li><a href="cuentas.html"><i class="fa-solid fa-circle-user"></i> Cuenta</a></li>
+                    <li><a href="#ayuda"><i class="fa-solid fa-question"></i> Ayuda</a></li>
+                </ul>
+                <div id="headerUserArea" class="header-user-area">
+                    <a class="cart-btn" href="#" aria-label="Ver canasta">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <button
+                        id="headerLoginBtn"
+                        class="header-login-btn"
+                        type="button"
+                        onclick="window.location.href='cuentas.html'">
+                        Iniciar sesión
+                    </button>
+                    <div class="profile-dropdown-container">
+                        <button id="headerProfileBtn" class="header-profile" type="button" hidden>
+                            <img id="headerAvatar" src="img/user.png" alt="Foto de perfil" />
+
+                            <span id="headerUserName"> Usuario </span>
+                        </button>
+
+                        <div id="profileDropdown" class="profile-dropdown">
+                            <button id="changePhotoBtn">Cambiar foto de perfil</button>
+
+                            <button id="logoutBtnMenu">Cerrar sesión</button>
+                        </div>
+                    </div>
+                    <button id="logoutIndex" hidden>Cerrar sesión</button>
+                </div>
+            </nav>
+        </header>
+
+        <section id="inicio" class="hero">
+            <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="img/Header.jpg" aria-hidden="true">
+                <source src="videos/355595_medium.mp4" type="video/mp4" />
+            </video>
+            <canvas id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-content reveal">
+                <h1>Tecnología Sin Límites</h1>
+                <p>Encuentra las mejores computadoras para trabajo, gaming y creación de contenido.</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn">Ver Catálogo</a>
+                    <a href="cuentas.html" class="btn-secondary" id="heroRegisterBtn"> Crear Cuenta </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="estadisticas reveal-section">
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Usuarios</p>
+            </div>
+            <div class="stat">
+                <h2>500+</h2>
+                <p>Productos</p>
+            </div>
+            <div class="stat">
+                <h2>99%</h2>
+                <p>Satisfacción</p>
+            </div>
+        </section>
+
+        <section id="productos" class="productos reveal-section">
+            <article class="producto">
+                <img
+                    src="https://www.xtremepc.com.mx/cdn/shop/files/60ad1cf8-4fc8-45bb-a69e-fd9589dfd49e_200x200.png?v=1779843412"
+                    alt="PC Phantom PRO"
+                    class="adjustimage" />
+                <div class="info">
+                    <h3>Phantom PRO</h3>
+                    <p>Potencia equilibrada para jugar, editar y trabajar con fluidez.</p>
+                    <span class="precio">Componentes ↓</span>
+                    <div class="acciones-producto"><button class="details-btn" type="button">Ver Más</button></div>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7" alt="PC Titan X" />
+                <div class="info">
+                    <h3>Titan X</h3>
+                    <p>Máximo rendimiento para gaming, streaming y tareas exigentes.</p>
+                    <span class="precio">Componentes ↓</span>
+                    <div class="acciones-producto"><button class="details-btn" type="button">Ver Más</button></div>
+                </div>
+            </article>
+
+            <article class="producto">
+                <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a" alt="PC Dragon Fire" />
+                <div class="info">
+                    <h3>Dragon Fire</h3>
+                    <p>Ideal para comenzar en gaming con buenos FPS y diseño llamativo.</p>
+                    <span class="precio">Componentes ↓</span>
+                    <div class="acciones-producto"><button class="details-btn" type="button">Ver Más</button></div>
+                </div>
+            </article>
+            <article class="producto">
+                <img src="img/Storm_Elite.png" alt="Storm Elite" />
+                <div class="info">
+                    <h3>Storm Elite</h3>
+                    <p>Perfecto para el mundo gaming y Exigencias estremas.</p>
+                    <span class="precio">Componentes ↓</span>
+                    <div class="acciones-producto"><button class="details-btn" type="button">Ver Más</button></div>
+                </div>
+            </article>
+        </section>
+
+        <section id="comparativa" class="comparativa reveal-section">
+            <h2>Tabla Comparativa</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Procesador</th>
+                            <th>Gráfica</th>
+                            <th>RAM</th>
+                            <th>Uso recomendado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phantom PRO</td>
+                            <td>AMD Ryzen 9</td>
+                            <td>RTX 5080</td>
+                            <td>32GB DDR5</td>
+                            <td>Gaming y edición</td>
+                        </tr>
+                        <tr>
+                            <td>Titan X</td>
+                            <td>Intel Core i9</td>
+                            <td>RTX 5090</td>
+                            <td>64GB DDR5</td>
+                            <td>Alto rendimiento</td>
+                        </tr>
+                        <tr>
+                            <td>Dragon Fire</td>
+                            <td>Ryzen 7</td>
+                            <td>RTX 5070</td>
+                            <td>32GB DDR5 RGB</td>
+                            <td>Gaming competitivo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="beneficios" class="beneficios reveal-section">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Mejores Precios</h3>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Tiendas Autorizadas</h3>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Soporte 24/7</h3>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-crown"></i>
+                    <h3>Calidad</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="ayuda" class="ayuda reveal-section">
+            <h2>Preguntas Frecuentes</h2>
+            <details>
+                <summary>¿Cómo garantizan la calidad?</summary>
+                <p>Ofrecemos productos que cumplen altos estándares de rendimiento y durabilidad.</p>
+            </details>
+            <details>
+                <summary>¿Brindan atención al cliente?</summary>
+                <p>Sí, contamos con soporte para resolver tus dudas y necesidades.</p>
+            </details>
+            <details>
+                <summary>¿Los precios son transparentes?</summary>
+                <p>Sí, mostramos información clara para comparar antes de elegir.</p>
+            </details>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <h2>TechNova Computers</h2>
+                <p>Tecnología de última generación para todos.</p>
+                <div class="socials">
+                    <a href="paginas.html" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="paginas.html" class="social-link" aria-label="Instagram"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="paginas.html" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="paginas.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/cart.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

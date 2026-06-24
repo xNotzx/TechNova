@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Canasta TechNova</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/cart.css" />
+        <link rel="stylesheet" href="css/canasta.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
+    <body class="basket-page">
+        <header>
+            <nav>
+                <div class="logo"><i class="fas fa-laptop" aria-hidden="true"></i>TechNova</div>
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio"><i class="fas fa-house"></i> Inicio</a></li>
+                    <li><a href="Productos.html"><i class="fa-brands fa-product-hunt"></i> Productos</a></li>
+                    <li><a href="cuentas.html"><i class="fa-solid fa-circle-user"></i> Cuenta</a></li>
+                </ul>
+                <div class="header-user-area">
+                    <a class="cart-btn" href="#" aria-label="Ver canasta">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="basket-hero">
+                <div class="basket-hero-content">
+                    <h1>Links de compra para tus componentes</h1>
+                    <p>Consulta en un solo HTML los componentes guardados y abre sus busquedas en Amazon o Mercado Libre.</p>
+                    <div class="basket-actions">
+                        <a class="btn" href="Productos.html">Agregar componentes</a>
+                        <button class="btn-secondary basket-clear-page" type="button">Vaciar canasta</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="basket-summary" aria-label="Resumen de canasta">
+                <article>
+                    <strong id="basketTotal">0</strong>
+                    <span>Componentes guardados</span>
+                </article>
+                <article>
+                    <strong id="basketPcTotal">0</strong>
+                    <span>PCs con componentes</span>
+                </article>
+                <article>
+                    <strong>2</strong>
+                    <span>Tiendas por componente</span>
+                </article>
+            </section>
+
+            <section class="basket-content" id="basketContent"></section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <h2>TechNova Computers</h2>
+                <p>Tecnologia de ultima generacion para todos.</p>
+                <div class="socials">
+                    <a href="paginas.html" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="paginas.html" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="paginas.html" class="social-link" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="paginas.html" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/cart.js"></script>
+        <script src="js/canasta.js"></script>
+    </body>
+</html>
